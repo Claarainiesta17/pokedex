@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "Smooch Sans";
+    src: url('./assets/fonts/SmoochSans-VariableFont_wght.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  font-family: "Smooch Sans", sans-serif;
+}
+
+p{
+    font-weight: bold;
+}
