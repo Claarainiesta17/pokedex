@@ -3,6 +3,13 @@ const todosLosPokemons = 151; //El nº que necesito recoger de pokemons
 
 const gallery$$ = document.querySelector(".gallery"); //creo el nodo con mi div con clase "gallery"
 
+const findPokemon = async (i) => {
+    let pokemon = await fetch(`https://pokeapi.co/api/v2/pokemon/${i}`).then(
+      (res) => res.json()
+    );
+    return pokemon;
+  };
+
 function getCards(){
 for (let index = 1; index < todosLosPokemons; index++) {
     buscarPokemon(index)
